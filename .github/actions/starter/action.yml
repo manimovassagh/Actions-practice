@@ -1,0 +1,15 @@
+name: "Starter Action"
+description: "This is to start"
+inputs:
+  example-input:
+    description: "An example input"
+    required: false
+    default: "Starting"
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Say Start"
+      shell: bash
+      run: |
+        echo "Hello my starter"

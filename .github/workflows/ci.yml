@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: "Run Hello World Action"
-        uses: ./.github/actions/hello-world
+        uses: ./.github/actions/starter
