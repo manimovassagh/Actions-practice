@@ -5,7 +5,7 @@ inputs:
     description: "An example input"
     required: false
     default: "World"
-
+#use
 runs:
   using: "composite"
   steps:
