@@ -5,7 +5,7 @@ inputs:
     description: "An example input"
     required: false
     default: "World"
-#use
+#use sone inputs
 runs:
   using: "composite"
   steps:
