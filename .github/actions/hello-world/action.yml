@@ -1,6 +1,7 @@
 name: "Hello World Action"
 description: "A simple Hello World GitHub Action"
 inputs:
+  
   example-input:
     description: "An example input"
     required: false
