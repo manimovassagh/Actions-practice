@@ -1,15 +1,16 @@
-name: "Hello World Action"
-description: "A simple Hello World GitHub Action"
+---
+description: A simple Hello World GitHub Action
 inputs:
   example-input:
-    description: "An example input"
+    default: World
+    description: An example input
     required: false
-    default: "World"
+name: Hello World Action
 #use sone inputs
 runs:
-  using: "composite"
   steps:
-    - name: "Say Hello"
-      shell: bash
+    - name: Say Hello
       run: |
         echo "Hello, ${{ inputs.example-input }}!"
+      shell: bash
+  using: composite
