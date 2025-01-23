@@ -13,3 +13,5 @@ runs:
       shell: bash
       run: |
         echo "Hello my starter"
+        echo "This is a cleaner process for my self-hosted runner"
+

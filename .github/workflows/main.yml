@@ -15,4 +15,12 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          - run: echo "🍏 This job's status is ${{ job.status }}."
+          
+  Post-Clean-Up:
+    runs-on: self-hosted
+    steps:
+      - name: Clean up after job
+        run: |
+          echo "Cleaning up workspace..."
+          Remove-Item -Recurse -Force ${{ github.workspace }}\*
