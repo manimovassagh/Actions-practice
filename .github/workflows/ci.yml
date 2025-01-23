@@ -7,10 +7,20 @@ on:
 
 jobs:
   hello-world-job:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v2
 
       - name: "Run Hello World Action"
         uses: ./.github/actions/starter
+
+  post-cleanup:
+    needs: hello-world-job
+    runs-on: windows-latest
+    steps:
+      - name: "Clean up workspace"
+        shell: powershell
+        run: |
+          echo "Cleaning up workspace..."
+          Remove-Item -Recurse -Force ${env:GITHUB_WORKSPACE}\* -ErrorAction SilentlyContinue
