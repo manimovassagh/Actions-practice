@@ -18,7 +18,7 @@ jobs:
           - run: echo "🍏 This job's status is ${{ job.status }}."
           
   Post-Clean-Up:
-    runs-on: self-hosted
+    runs-on: windows-latest
     steps:
       - name: Clean up after job
         run: |
