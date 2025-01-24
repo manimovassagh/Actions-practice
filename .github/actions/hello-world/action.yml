@@ -1,4 +1,6 @@
 ---
+
+
 description: A simple Hello World GitHub Action
 inputs:
   example-input:
