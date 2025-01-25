@@ -22,5 +22,5 @@ jobs:
       - name: "Clean up workspace"
         shell: powershell
         run: |
-          echo "Cleaning up workspace..."
+          echo "Cleaning up workspace... Hello"
           Remove-Item -Recurse -Force ${env:GITHUB_WORKSPACE}\* -ErrorAction SilentlyContinue
