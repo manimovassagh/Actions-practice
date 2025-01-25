@@ -11,7 +11,7 @@ name: Hello World Action
 #use sone inputs
 runs:
   steps:
-    - name: Say Hello
+    - name: Say Nice Things
       run: |
         echo "Hello, ${{ inputs.example-input }}!"
       shell: bash
