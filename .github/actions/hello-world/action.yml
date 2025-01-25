@@ -1,6 +1,3 @@
----
-
-
 description: A simple Hello World GitHub Action
 inputs:
   example-input:
@@ -11,7 +8,7 @@ name: Hello World Action
 #use sone inputs
 runs:
   steps:
-    - name: Say Nice Things
+    - name: Say "Nice" Things
       run: |
         echo "Hello, ${{ inputs.example-input }}!"
       shell: bash
