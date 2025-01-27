@@ -14,9 +14,9 @@ jobs:
 
       - name: "Run Hello World Action"
         uses: ./.github/actions/starter
-
+      
   post-cleanup:
-    
+
     needs: hello-world-job
     runs-on: windows-latest
 
