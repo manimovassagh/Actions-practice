@@ -1,7 +1,6 @@
 name: "CI Workflow for Hello World"
 
 on:
-  
   push:
     branches:
       - main
